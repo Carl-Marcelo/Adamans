@@ -1,0 +1,449 @@
+::-webkit-scrollbar {
+  width: 8px; } 
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgba(24, 23, 23, 0.219); 
+      border-radius: 10px; } 
+        ::-webkit-scrollbar-thumb {
+          background: rgb(0, 0, 0); 
+          border-radius: 10px; }          
+
+* {box-sizing: border-box; font-family: 'Raleway';}
+
+/* wow Animation Delay & Duration */
+.bounceInLeft, .bounceInRight {
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+}
+
+/* horizontal rule with style */
+hr {
+  width: 15%;
+}
+
+html,
+body,
+header,
+.view,
+.Heading-Text {
+  height: 100%;
+  
+  /* Smooth Scroll */
+  scroll-behavior: smooth;
+}
+
+/* Particles Style */
+#particles-js {
+  position: absolute; 
+  top:0; 
+  right: 0; 
+  width: 100%; 
+  height: 666px;
+}
+
+/* Animation on background */
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY();
+  }
+}
+
+/* Animated Effects on hover */
+a.animated-button.victoria-one:after {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 5s ease infinite;
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+  width: 150%;
+  z-index: -1;
+  transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover, a.animated-button:visited:hover {
+  color: rgb(255, 255, 255) !important; 
+  z-index: 999;
+}
+
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+  height: 450%;
+}
+
+/* Arrow Bounce */
+.arrow-bounce {
+  margin-top: 5px;
+  animation: Bounce 1s ease infinite;
+}
+
+/* Header Background Linear Gradient */
+.main {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+}
+
+/* Brand Name */
+.Woo {
+  font-size: 2.8em;
+}
+
+/* Navbar Items */
+#navbar-items {
+  font-size: .7em;
+}
+
+/* Animated navbar on scroll */
+.top-nav-collapse {
+  background-color: #fafafa !important;
+}
+
+.top-nav-collapse .Woo {
+  font-size: 1.5em;
+  transition-delay: .3s;
+  transition-duration: .5s;
+}
+
+/* Heading welcome text */
+.Heading-Text {
+  margin-top: 5%;
+}
+
+.Heading-Text h1 {
+ font-size: 40px;
+ font-family: 'Poppins', sans-serif;
+}
+
+.Heading-Text .Header-Text-Style {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.4em ;
+  font-weight: 200;
+}
+
+/* About */
+#About {
+  height: 666px;
+  background: #f8faff;
+  margin-top: auto;
+}
+
+.About-Woo-Text {
+  font-family: 'Poppins', sans-serif !important;
+  line-height: 2em;
+}
+
+#About p {
+  font-family: inherit;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+}
+
+#Style-Text {
+  font-family: inherit;
+  color: #23A6D5;
+  background:rgb(240, 240, 240);
+  padding: 2%;
+}
+
+#Style-Text-2 {
+  font-family: inherit;
+  color: #E73C7E;
+  background:rgb(240, 240, 240);
+  padding: 2%;
+}
+
+/* Service  */
+#Service h4,
+#Service h2 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: bold;
+}
+
+#Service h4 {
+  font-size: 18px;
+  line-height: 1.2em !important;
+}
+
+/* Parallax  */
+#parallax-bg {
+  height: 350px;
+}
+
+.parallax {
+  height: 350px;
+  background: url('../Background/parallax-bg.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  filter: grayscale(40%);
+}
+
+/* Projects */ 
+#Projects h6,
+#Projects .text h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+#Projects h2 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: bold;
+  line-height: 1.2em !important;
+  text-transform: capitalize;
+}
+
+#Projects .text h6 {
+  letter-spacing: 2px;
+}
+
+#Projects .Project-Image-Container {
+  transform: translateZ(0px) translateY(10.0621%);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  border-radius: 2%;
+  margin-top: 10%;
+}
+
+/* Achievements */
+#Achievements {
+  background: #f8faff;
+  height: 600px;
+}
+
+#Achievements h2 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: bold;
+  line-height: 1.2em !important;
+  text-transform: capitalize;
+}
+
+#Achievements .count {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5em;
+}
+
+#Achievements p {
+  font-size: 1.3em;
+}
+
+/* Team */
+#Team {
+  height: 900px;
+}
+
+#Team .Brook,
+#Team .William,
+#Team .Peter {
+  height: 400px;
+  width: 100%;
+}
+
+#Team h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#Team h4,
+#Team h6,
+#Team p {
+  font-family: 'Poppins', sans-serif;
+}
+
+#Team .developers h6 {
+  font-size: .8em;
+}
+
+#Team .Brook .Brook-Image {
+  height: 400px;
+  background: url('../Developers/Brook-Levister.png') no-repeat;
+  background-size: cover;
+  background-position-x: -50px;
+}
+
+#Team .William .William-Image {
+  height: 400px;
+  background: url('../Developers/William-Miller.png') no-repeat;
+  background-size: cover;
+  background-position-x: -50px;
+}
+
+#Team .Peter .Peter-Image {
+  height: 400px;
+  background: url('../Developers/Peter-Onsborg.png') no-repeat;
+  background-size: cover;
+  background-position-x: -10px;
+}
+
+
+
+/* Contact */
+#Contact {
+  background: rgb(32, 31, 31);
+  height: 600px;
+  padding-top: 140px;
+  color: white;
+}
+
+#Contact h5 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+}
+
+#Contact .Woo-Text, 
+#Contact address,
+#Contact p,
+#Contact .link {
+  font-family: 'Poppins', sans-serif;
+  padding-left: 15px;
+  border-left: 3px solid #23A6D5;
+}
+
+#Contact .link a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  line-height: 1.9em;
+  letter-spacing: 1.2px;
+}
+
+#Contact .link a:hover {
+  border-bottom: 1px solid white;
+  transition: all .7s ease; 
+}
+
+#Contact .social a {
+  color: white;
+  padding: 15px;
+  background: rgba(238, 238, 238, 0.075);
+  border-radius: 50%;
+}
+
+#Contact .social .fb:hover {
+  color: #3b5998;
+  transition: .5s all ease;
+}
+
+#Contact .social .tw:hover {
+  color: #55acee;
+
+  transition: .5s all ease;
+}
+
+#Contact .social .ig:hover {
+  color: #517fa4;
+
+  transition: .5s all ease;
+}
+
+#Contact .social .gh:hover {
+  color: rgb(0, 0, 0);
+  transition: .5s all ease;
+}
+
+#Contact .social .gg:hover {
+  color: #dc4e41;
+  transition: .5s all ease;
+}
+
+#Contact h6 {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+  padding: 0 15px;
+}
+
+
+/* Get in touch */
+#Mail-Heading-Text h6,
+#Mail-Heading-Text h1 {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+#Mail-Heading-Text h1 {
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+#Mail {
+  background: #f8faff;
+}
+
+#Mail h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#Mail input,
+#Mail textarea {
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 0;
+}
+
+#Mail textarea {
+  height: 200px;
+}
+
+#Mail input:focus,
+#Mail textarea:focus {
+  box-shadow: none;
+  border: 1px solid #000;
+  transition: .6s all ease;
+}
+
+/* Return to top button */
+#return-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  transition: all 0.3s ease;
+  opacity: .7;
+}
+#return-to-top-btn i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+#return-to-top-btn:hover {
+  opacity: 1;
+}
+#return-to-top-btn:hover i {
+  color: #fff;
+  top: 5px;
+}

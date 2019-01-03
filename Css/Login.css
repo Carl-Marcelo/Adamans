@@ -1,0 +1,39 @@
+/* Login */
+body {
+  background: #f8faf8;
+  height: 666px;
+  font-family: 'Poppins', sans-serif;
+}
+form {
+  position: relative;
+  height: 400px;
+  padding: 20px;
+  margin-top: 30%;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(26, 26, 26, 0.178);
+}
+
+form::after {
+  content: 'Login';
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  background: #23A6D5;
+}
+
+form input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #000 !important;
+  transition: all .6s ease;
+}
+
+form button {
+  background: #23A6D5;
+}
