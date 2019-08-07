@@ -95,7 +95,7 @@
 					</div>
 					<h4 class="mb-3 wow bounceInRight">Help & Supports</h4>
 					<p class="wow bounceInLeft">
-						We are here to assist you on the problem you are facing even if it is personal matter and if you need something to talk,  just call us. <i class="far fa-smile-wink"></i>
+					Get in touch and we will support you as much as we can. <i class="far fa-smile-wink"></i>
 					</p>
 				</div>
       </div>

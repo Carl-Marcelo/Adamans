@@ -1,2 +1,0 @@
-#MyAdamansProject
-My Project
